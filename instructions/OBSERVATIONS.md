@@ -2,6 +2,20 @@
 
 ### JSX
 
+```const element = <h1>Hello, world!</h1>;```
+
+syntax extension to JavaScript  
+React separates concerns with loosely coupled units called "components"
+
+
+```const element = (<h1>Hello, {formatName(user)}!</h1>);```
+
+wrapped in parenthesis
+
+```<div tabIndex="0"><img src={user.avatarUrl}>```
+
+quotes (for string values) or curly braces (for expressions)  
+safe to imbed user input in JSX, there is protection from XSS
 
 
 ### `npm start`
