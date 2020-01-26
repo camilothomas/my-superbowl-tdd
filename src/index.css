@@ -1,0 +1,29 @@
+<<<<<<< HEAD
+=======
+.demDivs {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  border-radius: 50%;
+}
+
+.repubDivs {
+  width: 100px;
+  height: 100px;
+  background-color: rebeccapurple;
+  border-radius: 50%;
+}
+
+.marlboroDivs {
+  width: 100px;
+  height: 100px;
+  background-color: navy;
+  border-radius: 50%;
+}
+
+.flexMe {
+  width: 500px;
+  display: flex;
+  justify-content: flex-end;
+}
+>>>>>>> 42dff912d63a64d0bbe1ddb6c0a50a39a1653aee
