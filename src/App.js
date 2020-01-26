@@ -3,10 +3,9 @@ import './App.css';
 import Blob from "./Blob";
 let jitters = false;
 
-function handleBullshit(event) {
+function handleBs(event) {
   jitters = true;
 }
-
 
 const element = (
   <div className="flexMe">
@@ -18,15 +17,22 @@ const element = (
 
 const elementTwo = (
 <div className="flexMe">
-    <Blob className="repubDivs" onClick={handleBullshit}/>
+    <Blob className="repubDivs" onClick={handleBs}/>
     <Blob className="demDivs" />
     <Blob className="repubDivs" />
   </div>
 );
 
-function App() {
-  if (jitters) return (element);
-  else return (elementTwo);
+class App extends React.Component {
+    render() {
+        return (
+            <div className="flexMe">
+                <Blob className="repubDivs" onClick={handleBs}/>
+                <Blob className="demDivs" />
+                <Blob className="repubDivs" />
+            </div>
+        );
+    }
 }
 
 export default App;
