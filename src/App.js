@@ -1,14 +1,12 @@
 import React from 'react';
 import './App.css';
+import Blob from "./Blob";
 let jitters = false;
 
 function handleBullshit(event) {
   jitters = true;
 }
 
-function Blob(props) {
-  return <div className={props.className} onClick={props.onClick}></div>;
-}
 
 const element = (
   <div className="flexMe">
@@ -25,6 +23,7 @@ const elementTwo = (
     <Blob className="repubDivs" />
   </div>
 );
+
 function App() {
   if (jitters) return (element);
   else return (elementTwo);
