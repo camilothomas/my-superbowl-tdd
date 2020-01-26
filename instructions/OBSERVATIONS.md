@@ -52,3 +52,6 @@ Pure functions do not
 ```fuction sum(a, b) {return a+b;}```
 
 **All React components must act like pure functions with respect to their props**
+
+### State and Lifecycle
+
